@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*Hero section Button section designs:- */
+@layer components{
+    /*Use class name for default as well use mult. times:- */
+    .primary-btn{
+        @apply bg-primary text-white font-semibold py-3 px-6
+                rounded-md duration-300 hover:text-black hover:font-extrabold;
+    }
+    .second-btn{
+        @apply bg-ternary text-gray-600 font-semibold py-3 px-4
+                rounded-md duration-300 hover:text-black hover:font-extrabold;
+    }
+}
+
+/*Layer for Hero section image:- */
+@layer utilities{
+    .shadow-btn{
+        filter: drop-shadow(-6px 8px 15px rgba(0,0,0,0.2));
+    }
+    .halavita{
+        background-color: rgb(240, 226, 204);
+    }
+}
+
